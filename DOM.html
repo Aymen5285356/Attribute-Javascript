@@ -1,0 +1,22 @@
+<html>
+<head><title>Exemple DOM</title></head>
+<body>
+<p id="ID12">Texte du paragraphe ID12</p>
+<input type="text" name="groupe" value="A">
+<input type="text" name="groupe" value="B">
+<div>Premier DIV</div>
+<div>Deuxième DIV</div>
+<button onclick="testerSelection()">Tester</button>
+<script>
+
+function testerSelection() {
+let parId =document.getElementById("ID12");
+alert("Par ID : " + parId.innerText);
+let parName = element.getElementById("groupe");
+alert("parName : valeurs=" + parName[0].value+" et "+parName[1].value);
+let divs =document.getElementByTagName("div");
+alert("Par TagName :" + divs.length +"éléments div trouvés");}
+
+</script>
+</body>
+</html>
