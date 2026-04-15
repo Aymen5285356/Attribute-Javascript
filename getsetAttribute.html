@@ -1,0 +1,20 @@
+<html>
+<head><title>getAttribute / setAttribute</title></head>
+<body>
+<p id="p1" nom="OFPPT2025">ceci est un paragraphe.</p>
+<button onclick="lttribut()">lire l'attribut 'nom'</button>
+<button onclick="mAttribut()">Modifier attribut 'nom'</button>
+<script>
+
+function lAttribut() {
+let element =document.getElementById("p1");
+let valeur = element.getAttribute("nom");
+alert("la valeur d'attribut 'nom' : " + valeur);}
+function mAttribut(){
+let element =document.getElementById("p1");
+element.setAttribute("nom","CMC2026");
+alert("attribut 'nom' est modifié" + valeur);}
+
+</script>
+</body>
+</html>
